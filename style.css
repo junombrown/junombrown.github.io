@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    color: black;
+    line-height: 1.1;
+    font-size: 10pt;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+    min-width: 260px;
+    min-height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+#navwrapper {
+    width: 100vw;
+    padding-top: 10px;
+    background-color: white;
+    height: 54px;
+}
+
+#nav {
+    padding: 0;
+    width: 60vw;
+    background-color: white;
+    z-index: 100;
+}
+
+.nav_box {
+    font-size: 16pt;
+    padding: 2px 0 2px 0;
+    margin: 0%;
+    position: initial;
+    display: block;
+}
+
+.nav_box:hover {
+    font-style: italic;
+}
+
+#nav svg {
+    display: inline;
+    padding-top: 8px;
+    padding-right: 5px;
+    height: 10px;
+    width: 25px;
+    float: right;
+    overflow: hidden;
+}
+
+#nav svg:hover {
+    transition: .2s;
+    transform: scale(90%);
+}
+
+#juno {
+    width: 20%;
+    color: #02539d;
+    background-color: #ee770c;
+}
+
+#brown {
+    float: left;
+    width: 30%;
+    color: #ee770c;
+    background-color: #02539d;
+}
+
+#project {
+    float: left;
+    width: 50%;
+    color: #3374ae;
+    background-color: #f3b202;
+}
+
+#info {
+    width: 20%;
+    float: right;
+    color: #f3b202;
+    background-color: #3374ae;
+}
+
+main {
+    width: 100vw;
+    height: 85vh;
+    position: fixed;
+    margin: 0%;
+    padding-bottom: 10%;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 1s;
+    overflow: scroll;
+}
+
+.page.open {
+    height: 100%;
+    transition: 1s;
+}
+
+
+/* FISH PAGE ELEMENTS  */
+
+#fish_page {
+    height: 100%;
+}
+
+#pick {
+    position: relative;
+    float: right;
+    width: 35vw;
+    padding: 2.5vw;
+}
+
+h1 {
+    width: 100%;
+    font-weight: normal;
+    margin: 0%;
+}
+
+#aquarium {
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    position: initial;
+    bottom: 0%;
+    display: inline-table;
+}
+
+#info_fish {
+    position: relative;
+    float: right;
+    padding: 5vh 2.5vw 0 0;
+    width: 60vw;
+}
+
+#text_fish {
+    float: left;
+    width: 40%;
+    padding: 0 1vw 0 1vw;
+    margin: 0%;
+    overflow-y: scroll;
+}
+
+#caption_fish {
+    width: 53%;
+    position: relative;
+    padding: 0 1vw 0 1vw;
+}
+
+#img_fish {
+    width: 30vw;
+    position: relative;
+    left: 5vw;
+    top: 15vh;
+    transform: rotate(-20deg);
+    transition: 0.2s;
+}
+
+#img_fish:hover {
+    transform: rotate(20deg);
+    transition: 0.2s;
+    transform: scale(110%);
+}
+
+
+/* INFO PAGE ELEMENTS */
+
+#info_page {
+    background-color: #3374ae;
+}
+
+.bio_links {
+    hyphens: auto;
+    font-size: 15pt;
+}
+
+.bio_links:hover {
+    font-style: italic;
+}
+
+.column {
+    float: left;
+    width: 27vw;
+    display: block;
+    margin-bottom: 30px;
+    padding: 10vh 3vw 10vh 3vw;
+    line-height: 1.6;
+}
+
+
+/* PROJECTS PAGE ELEMENTS */
+
+#projects_page {
+    background-color: #f3b202;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon {
+    width: 33%;
+    position: relative;
+}
+
+#icon_1,
+#icon_4,
+#icon_7,
+#icon_2,
+#icon_5 {
+    float: left;
+}
+
+#icon_3,
+#icon_6 {
+    float: right;
+}
+
+
+/* PROJECT PAGE MASTER ELEMENTS */
+
+.page_project {
+    background-color: white;
+    overflow: hidden;
+}
+
+.pic_column {
+    height: 70%;
+    margin: 5vw 0% 0% 2%;
+    width: 70%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    float: left;
+    padding-bottom: 50px;
+}
+
+.pic_projects img {
+    width: 100%;
+}
+
+.pic_projects {
+    position: relative;
+    display: block;
+    margin: 10px;
+    float: left;
+}
+
+.text_column {
+    height: 80%;
+    margin: 70px 2% 70% 0%;
+    width: 26%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.text_wrapper {
+    width: 80%;
+    padding: 10% 10%;
+}
+
+h2 {
+    hyphens: auto;
+    font-weight: normal;
+    font-size: 15pt;
+}
+
+
+/* PROJECT PAGE PLASTER */
+
+#plaster_1,
+#plaster_4 {
+    width: 70%;
+}
+
+#plaster_2 {
+    width: 50%;
+    padding-top: 30px;
+    float: left;
+}
+
+#plaster_3 {
+    width: 40%;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    /* PHONE NAVIGATION */
+    #navwrapper {
+        width: 100vw;
+        padding-top: 0px;
+        background-color: white;
+        height: 54px;
+    }
+    #nav {
+        width: 100vw;
+    }
+    .nav_box {
+        margin: 0%;
+        display: block;
+    }
+    #juno {
+        float: left;
+    }
+    #brown {
+        width: 80%;
+        float: right;
+    }
+    #project {
+        width: 50%;
+    }
+    #info {
+        width: 50%;
+    }
+    /* PHONE FISH PAGE ELEMENTS  */
+    #pick {
+        position: relative;
+        float: right;
+        width: 90vw;
+        padding: 5vw;
+    }
+    #img_fish {
+        width: 80vw;
+        padding-bottom: 30vw;
+    }
+    #info_fish {
+        position: relative;
+        float: right;
+        padding: 10vw;
+        width: 80vw;
+    }
+    #text_fish {
+        width: 100%;
+    }
+    #caption_fish {
+        width: 100%;
+    }
+    /* PHONE PROJECTS PAGE ELEMENTS  */
+    .icon {
+        width: 50%;
+        position: relative;
+    }
+    #icon_1,
+    #icon_3,
+    #icon_5,
+    #icon_7 {
+        padding-bottom: 10vh;
+        float: left;
+    }
+    #icon_2,
+    #icon_4,
+    #icon_6 {
+        padding-top: 10vh;
+        float: right;
+    }
+    /* PHONE INFO PAGE ELEMENTS  */
+    .column {
+        width: 90vw;
+        padding: 3vh 5vw 3vh 5vw;
+    }
+    /* PHONE PROJECT PAGE MASTER ELEMENTS */
+    .page_project {
+        overflow-y: scroll;
+    }
+    .pic_column,
+    .text_column {
+        width: 90%;
+        margin: 5%;
+        float: none;
+        overflow-y: auto;
+        height: auto;
+    }
+    .pic_projects {
+        margin: 10px 0;
+        float: left;
+    }
+    .text_wrapper {
+        width: 100%;
+        padding: 0;
+    }
+    /* PHONE PROJECT PAGE PLASTER */
+    #plaster_1,
+    #plaster_4 {
+        width: 90%;
+    }
+    #plaster_2 {
+        padding: 0;
+    }
+    #plaster_2,
+    #plaster_3 {
+        width: 55%;
+        float: left;
+    }
+}
