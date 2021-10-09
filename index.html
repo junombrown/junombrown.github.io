@@ -8,7 +8,7 @@
     <!-- Tab text (description) -->
     <title>JUNO BROWN</title>
     <!-- link of icon -->
-    <link rel="icon" href="assets/other/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
     <!-- link to Css file (style, layout of page), JQuery javascript library and JS file (Jquery must be before Js bc it's called in the main.js)-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,10 +18,10 @@
 <body>
     <div id=navwrapper>
         <nav id=nav>
-            <a class=nav_box id="juno" href="#fish_page">&ensp;juno 
+            <a class=nav_box id="juno" href="#home">&ensp;juno 
                 
             </a>
-            <a class=nav_box id="brown" href="#fish_page"> 	&ensp;brown  
+            <a class=nav_box id="brown" href="#home"> 	&ensp;brown  
             </a>
             <a class=nav_box id="project" href="#projects_page"> 	&ensp;projects    <svg><line x1="0" y1="1" x2="25" y2="1" style="stroke:#3374ae;stroke-width:0.75" />
                 <line x1="0" y1="5" x2="25" y2="5" style="stroke:#3374ae;stroke-width:0.75" />
@@ -54,12 +54,12 @@
 
         </div>
 
-        <div class=page id="projects_page">
+        <div class="page move" id="projects_page">
 
             <a class="icon" id="icon_1" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_2" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_3" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_4" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
+            <a class="icon" id="icon_2" href="#metal"><img src="assets/metalpng.png" alt="project icon"></a>
+            <a class="icon" id="icon_3" href="#cyano"><img src="assets/cyanopng.png" alt="project icon"></a>
+            <a class="icon" id="icon_4" href="#nomadic"><img src="assets/nomadic-icon.png" alt="project icon"></a>
             <a class="icon" id="icon_5" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
             <a class="icon" id="icon_6" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
             <a class="icon" id="icon_7" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
@@ -67,7 +67,7 @@
 
         </div>
 
-        <div class=page id="info_page">
+        <div class="page move" id="info_page">
             <div class=column>
                 <a class="bio_links" href="">@junobrown_</a><br> <br>
                 <a class="bio_links" href="mailto:junobrown@outlook.com">junombrown@outlook.com</a>
@@ -84,7 +84,9 @@
             </div>
         </div>
 
+        <!-- PROJECT PAGES -->
 
+        <!-- PLASTER PROJECT -->
         <div class="page page_project" id=plaster>
             <div class="pic_column">
                 <div class="pic_projects" id=plaster_1><img src="assets/projects/plaster1.jpg" alt="Project Picture"></div>
@@ -100,11 +102,88 @@
                         <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
                         flexibility of the textile
                         <br><br> hanging,
-                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against
+                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
+                        taken on
                     </p>
                 </div>
             </div>
         </div>
+
+        <!-- METAL PROJECT -->
+        <div class="page page_project" id=metal>
+            <div class="pic_column">
+                <div class="pic_projects" id=plaster_1><img src="assets/projects/metal1.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_2><img src="assets/projects/metal2.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_3><img src="assets/projects/metal3.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/metal4.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/metal5.jpg" alt="Project Picture"></div>
+            </div>
+            <div class="text_column">
+                <div class="text_wrapper">
+                    <h2>metal</h2> <br>
+                    <p>
+                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
+                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
+                        flexibility of the textile
+                        <br><br> hanging,
+                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
+                        taken on
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CYANO PROJECT -->
+        <div class="page page_project" id=cyano>
+            <div class="pic_column">
+                <div class="pic_projects" id=plaster_1><img src="assets/projects/cyano1.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_2><img src="assets/projects/cyano2.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_3><img src="assets/projects/cyano3.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano4.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano5.jpg" alt="Project Picture"></div>
+            </div>
+            <div class="text_column">
+                <div class="text_wrapper">
+                    <h2>cyanotype</h2> <br>
+                    <p>
+                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
+                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
+                        flexibility of the textile
+                        <br><br> hanging,
+                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
+                        taken on
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOMADIC PROJECT -->
+        <div class="page page_project" id=nomadic>
+            <div class="pic_column">
+                <div class="pic_projects" id=plaster_1><img src="assets/projects/nomad1.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_2><img src="assets/projects/nomad2.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_3><img src="assets/projects/nomad3.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/nomad4.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/nomad5.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/nomad6.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/nomad7.jpg" alt="Project Picture"></div>
+            </div>
+            <div class="text_column">
+                <div class="text_wrapper">
+                    <h2>nomadic platform</h2> <br>
+                    <p>
+                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
+                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
+                        flexibility of the textile
+                        <br><br> hanging,
+                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
+                        taken on
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 
 
 

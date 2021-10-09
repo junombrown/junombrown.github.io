@@ -133,7 +133,7 @@ h1 {
 }
 
 #aquarium {
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/backgroundbig.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,6 +210,9 @@ h1 {
 
 #projects_page {
     background-color: #f3b202;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
 }
 
 .icon img {
@@ -217,21 +220,7 @@ h1 {
 }
 
 .icon {
-    width: 33%;
-    position: relative;
-}
-
-#icon_1,
-#icon_4,
-#icon_7,
-#icon_2,
-#icon_5 {
-    float: left;
-}
-
-#icon_3,
-#icon_6 {
-    float: right;
+    align-self: center;
 }
 
 
@@ -269,6 +258,22 @@ h1 {
     width: 26%;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.text_column::-webkit-scrollbar,
+.pic_column::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.text_column,
+.pic_column {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .text_wrapper {
@@ -353,6 +358,9 @@ h2 {
         width: 100%;
     }
     /* PHONE PROJECTS PAGE ELEMENTS  */
+    #projects_page {
+        display: block;
+    }
     .icon {
         width: 50%;
         position: relative;
