@@ -17,10 +17,15 @@ $(document).ready(function() {
             $(all_pages).removeClass("open")
 
         } else {
-            $(page).removeClass("open");
+
             //toggle betwen info and project
             // $(page).toggleClass("open");
-            page = $(this).attr("href");
+            newpage = $(this).attr("href");
+            if (page != newpage) {
+                $(page).removeClass("open");
+                page = $(this).attr("href");
+            }
+
             $(page).toggleClass("open");
         }
 

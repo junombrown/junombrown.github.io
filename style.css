@@ -93,10 +93,9 @@ p {
 
 main {
     width: 100vw;
-    height: 85vh;
+    height: 90vh;
     position: fixed;
     margin: 0%;
-    padding-bottom: 10%;
 }
 
 .page {
@@ -233,12 +232,14 @@ h1 {
 
 .pic_column {
     height: 70%;
-    margin: 5vw 0% 0% 2%;
+    margin: 50px 0% 0% 2%;
     width: 70%;
     overflow-x: hidden;
     overflow-y: scroll;
     float: left;
     padding-bottom: 50px;
+    position: sticky;
+    top: 0;
 }
 
 .pic_projects img {
@@ -254,10 +255,13 @@ h1 {
 
 .text_column {
     height: 80%;
-    margin: 70px 2% 70% 0%;
+    margin: 70px 2% 0% 0%;
     width: 26%;
     overflow-x: hidden;
     overflow-y: scroll;
+    position: sticky;
+    padding-bottom: 50px;
+    top: 0;
 }
 
 .text_column::-webkit-scrollbar,
@@ -307,6 +311,9 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+    main {
+        height: 95vh;
+    }
     /* PHONE NAVIGATION */
     #navwrapper {
         width: 100vw;
@@ -394,6 +401,8 @@ h2 {
         float: none;
         overflow-y: auto;
         height: auto;
+        position: relative;
+        top: auto;
     }
     .pic_projects {
         margin: 10px 0;
