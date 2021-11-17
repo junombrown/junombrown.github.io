@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <!-- For responsivity purposes -->
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fill in the content part -->
+    <meta name="description" content="This is an example of a meta description. 
+This will often show up in search results.">
     <!-- Tab text (description) -->
-    <title>JUNO BROWN</title>
+    <title>Juno Brown's website / home</title>
     <!-- link of icon -->
     <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
     <!-- link to Css file (style, layout of page), JQuery javascript library and JS file (Jquery must be before Js bc it's called in the main.js)-->
@@ -16,8 +20,11 @@
 </head>
 
 <body>
+
+    <!-- NAVIGATION -->
     <div id=navwrapper>
         <nav id=nav>
+            <!-- buttons: page linked is written in #href (ex:home goes back to fish page ) -->
             <a class=nav_box id="juno" href="#home">&ensp;juno 
                 
             </a>
@@ -26,69 +33,103 @@
             <a class=nav_box id="project" href="#projects_page"> 	&ensp;projects    <svg><line x1="0" y1="1" x2="25" y2="1" style="stroke:#3374ae;stroke-width:0.75" />
                 <line x1="0" y1="5" x2="25" y2="5" style="stroke:#3374ae;stroke-width:0.75" />
                 <line x1="0" y1="9" x2="25" y2="9" style="stroke:#3374ae;stroke-width:0.75" /> </svg> 
-</a>
+            </a>
             <a class=nav_box id="info" href="#info_page"> 	&ensp;info    <svg><line x1="0" y1="1" x2="25" y2="1" style="stroke:#f3b202;stroke-width:0.75" />
                 <line x1="0" y1="5" x2="25" y2="5" style="stroke:#f3b202;stroke-width:0.75" />
                 <line x1="0" y1="9" x2="25" y2="9" style="stroke:#f3b202;stroke-width:0.75" /> </svg> 
-</a>
+            </a>
         </nav>
     </div>
+    <!-- ALL PAGE CONTAINER (the content and not the navigation) -->
     <main>
+
+        <!--FISH PAGE (HOME PAGE) -->
         <div class=page id="fish_page">
             <div id=pick>
                 <h1>PICK OF THE FISH</h1>
-                <p>every now and then my fish and i pick something we like and display it in the fish’s aquarium. in october the fish considered how its aquarium looked a little like a window display, and thought it conceptually interesting to make use of
-                    this idea.</p>
+                <!-- HERE hange the text for the PICK OF THE FISH description (<br> is a breakline) -->
+                <p>This is my fish. <br> In October my fish considered how its aquarium looked a little like a window display, and thought it conceptually interesting to make use of this idea. So, now and then my fish and I pick something we come across
+                    and display it in the aquarium.</p>
             </div>
 
             <div id=aquarium>
                 <img id=img_fish src="assets/FISH.png" alt="Juno's fish">
 
                 <div id=info_fish>
-                    <img id=caption_fish src="assets/projects/plaster2.jpg" alt="Pick of the fish image">
-                    <p id=text_fish>ea denimolor aturend itatet in re porio oditatem autatur? Sunte niae apero dem faces voluptio ditatque sumquat acia cus, simpost iassuntem underum quat vel experspic tem qui occatumetur apis sim explantis de eum facerupta net fuga.
-                        Endi officient la dolorehent optat officiendis re veniet voles repudaestis molore nectist, illias minciisci officimus, odignimus aut quati consed estius, nem ellupta temodion eos doluptas qui </p>
+                    <!-- HERE change the image in the aquarium -->
+                    <img id=caption_fish src="assets/breathing-dog_newest-cleanest.gif" alt="Pick of the fish image">
+                    <!-- HERE change the monthly fish update -->
+                    <p id=text_fish> PICK OF THE FISH NOVEMBER <br> <br> Katrina Brown <br> Intimating Touch <br> <br> A contemplation on touch, intimacy and a sensuous world of interconnecting bodies. <br> <br> <a class="bio_links" href="https://katrinabrown.net/project/intimating-touch-a-surface-choreography-on-skelf/" target="_blank">link</a><br> <br> </p>
                 </div>
             </div>
 
 
         </div>
 
+        <!-- PROJECTS PAGE (list of projects) -->
         <div class="page move" id="projects_page">
 
-            <a class="icon" id="icon_1" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_2" href="#metal"><img src="assets/metalpng.png" alt="project icon"></a>
-            <a class="icon" id="icon_3" href="#cyano"><img src="assets/cyanopng.png" alt="project icon"></a>
-            <a class="icon" id="icon_4" href="#nomadic"><img src="assets/nomadic-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_5" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_6" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
-            <a class="icon" id="icon_7" href="#plaster"><img src="assets/plaster-icon.png" alt="project icon"></a>
+            <!--Change the order of these block to change the order of the icons on the page -->
+
+            <!--ICON 1 -->
+            <a class="icon" id="icon_1" href="#plaster">
+                <img src="assets/plaster-icon.png" alt="project icon">
+                <span class="icon_title">soft castings</span>
+            </a>
+            <!--end ICON 1 -->
+
+            <a class="icon" id="icon_2" href="#metal"><img src="assets/metalpng.png" alt="project icon">
+                <span class="icon_title">metal legs</span>
+            </a>
+
+            <a class="icon" id="icon_3" href="#shadow"><img src="assets/cyanopng.png" alt="project icon">
+                <span class="icon_title">shadow benches</span>
+            </a>
+
+            <a class="icon" id="icon_4" href="#nomadic"><img src="assets/nomadic-icon.png" alt="project icon">
+                <span class="icon_title">nomadic platform //beach chair bonanza</span>
+            </a>
+
+            <!-- add here new project entry  -->
+            <!--1. copy the --ICON1--block and paste it down here. in the <img> tag, put the icon location in the folder and put the right icon title. 3. in href= add the id code you want the project page to have. -->
+
 
 
         </div>
 
+        <!-- INFO PAGE (list of projects) -->
         <div class="page move" id="info_page">
-            <div class=column>
-                <a class="bio_links" href="">@junobrown_</a><br> <br>
-                <a class="bio_links" href="mailto:junobrown@outlook.com">junombrown@outlook.com</a>
-            </div>
-            <div class=column>
-                i am a dutch / english designer / artist currently based in eindhoven, netherlands. <br><br> right at this moment I am graduating from design academy eindhoven in the department leisure.<br><br> my work stems from an interest in material
-                and spatial details, with a particular love for the unintentional scenography created in our daily surroundings. the subconscious actions and routines people undertake that make a space theirs, that shapes their room, house, city. if you
-                look closely, there’s wisps of surrealism tucked away in every corner!<br><br> i am also keen to be able to do everything. i want to be a carpenter and a train driver and a chef and a scenographer and more. i am immersed currently and
-                futurely in a lifelong process of learning it all.<br><br> feel free to get in contact for any reason at all.
+
+            <!-- change or add content to the left column. br is a breakline -->
+            <div class="column big">
+                Designer, artist, maker. More or less. <br> Dutch/English, currently based in Eindhoven, NL. <br><br> Soon to be alumni of Design Academy Eindhoven. <br><br> The ordinary and the strange. <br> The simple and the complex. <br> The functional
+                and the dis-functional. <br><br> Could be anything really. <br> This must be the place. <br><br> Feel free to contact me. Jobs, opinions, context-less chats, other. <br> <br> <br> <br>
+                <a class="bio_links" href="https://www.instagram.com/junobrown_/" target="_blank">@junobrown_</a><br> <br>
+                <a class="bio_links" href="mailto:junobrown@outlook.com" target="_blank">junombrown@outlook.com</a>
             </div>
 
+            <!-- change or add content to the right column.  -->
             <div class="column">
-                design academy eindhoven (BA leisure) [NL] <br><br> hdk steneby <br> (exchange: BA metal art) [SE]<br><br> studio anton alvarez <br> (internship) [SE]
+                <span>
+                Design Academy Eindhoven <br> (BA leisure) [NL] <br><br> HDK Steneby <br> (exchange: BA metal art) [SE] <br><br> Studio Anton Alvarez <br> (internship) [SE] <br> <br> <br> <br></span>
+                <img id=portrait src="assets/portrait.jpg" alt="Juno"> <br><br> <br> <br>
+                <span> [website developed by <a href="https://verdeiil.net">Marie Verdeil <span style="text-decoration: underline;">(verdeil.net)</span></a>]</span>
             </div>
+
+
+
         </div>
 
         <!-- PROJECT PAGES -->
+        <!-- how to add a project? 1. follow the instruction in the Projects list page 2. Copy the project page 1 (here to here) 3. follow change instructions. -->
+
+        <!-- COPY from here -->
 
         <!-- PLASTER PROJECT -->
+        <!-- in id="plaster" make sure the the # is the same as the icon in the project list -->
         <div class="page page_project" id=plaster>
             <div class="pic_column">
+                <!-- add image in the right order-->
                 <div class="pic_projects" id=plaster_1><img src="assets/projects/plaster1.jpg" alt="Project Picture"></div>
                 <div class="pic_projects" id=plaster_2><img src="assets/projects/plaster2.jpg" alt="Project Picture"></div>
                 <div class="pic_projects" id=plaster_3><img src="assets/projects/plaster3.jpg" alt="Project Picture"></div>
@@ -96,18 +137,18 @@
             </div>
             <div class="text_column">
                 <div class="text_wrapper">
-                    <h2>soft bodies hard bodies</h2> <br>
+                    <!-- title here -->
+                    <h2>SOFT CASTINGS</h2> <br>
                     <p>
-                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
-                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
-                        flexibility of the textile
-                        <br><br> hanging,
-                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
-                        taken on
+                        <!-- text here -->
+                        Material / process experimentation. <br> <br> Plaster is cast in sewn canvas sacks. <br> While the plaster is liquid, the sacks can be placed, <br> slumped, hung, propped up. <br> Creating creases, dimples, folds. <br> <br> Once
+                        set, this soft form becomes rigid.<br><br> The textile is removed, revealing the almost identical <br> surface of plaster, which has taken on the canvas texture. <br> <br> Hard objects with soft character. <br>
                     </p>
                 </div>
             </div>
         </div>
+
+        <!-- to here -->
 
         <!-- METAL PROJECT -->
         <div class="page page_project" id=metal>
@@ -120,21 +161,19 @@
             </div>
             <div class="text_column">
                 <div class="text_wrapper">
-                    <h2>metal</h2> <br>
+                    <h2>METAL LEGS</h2> <br>
                     <p>
-                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
-                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
-                        flexibility of the textile
-                        <br><br> hanging,
-                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
-                        taken on
+                        Two steel lamps. Playing with the anthropomorphic effect of legs on geometric shapes. <br> <br> Made while on an exchange program at HDK Steneby - a small campus in rural Sweden part of the University of Gothenburg. <br><br> I
+                        joined the metal art department. Between pine forests, hills, lakes, folköl and saunas lies their huge, industrial workshop. Here I was free to roam, explore and experiment. <br><br> Also: <br> 1980’s style weird pineapple and
+                        ham cream sauce with rice <br> saunas with windows <br> deer drunk on apples <br> moose stew <br> lingonberry cordial <br> cold mountain huts <br> mushroom picking <br> felled forests on trains <br> people skiing to work <br> kardemummabullar
+                        <br>
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- CYANO PROJECT -->
-        <div class="page page_project" id=cyano>
+        <!-- SHADOW PROJECT -->
+        <div class="page page_project" id=shadow>
             <div class="pic_column">
                 <div class="pic_projects" id=plaster_1><img src="assets/projects/cyano1.jpg" alt="Project Picture"></div>
                 <div class="pic_projects" id=plaster_2><img src="assets/projects/cyano2.jpg" alt="Project Picture"></div>
@@ -144,14 +183,11 @@
             </div>
             <div class="text_column">
                 <div class="text_wrapper">
-                    <h2>cyanotype</h2> <br>
+                    <h2>SHADOW FURNITURE</h2> <br>
                     <p>
-                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
-                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
-                        flexibility of the textile
-                        <br><br> hanging,
-                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
-                        taken on
+                        A series of benches. <br> Non-physical environmental elements as a design tool. <br><br> I treated mutliplex panels with cyanotype chemicals that made the surfaces photosensitive. <br><br> With these treated panels I went out on
+                        a sunny day to catch architectural shadows. <br><br> Accidental compositions of light and dark. Sharp edges, unexpected angles, dancing leaves. <br><br> Exposing the panels for a few minutes, they captured these compositions.
+                        <br><br> Once rinsed with water, the panels loose their photosensitive property and the shadows become fixed.<br><br> Ephemeral details captured and frozen in the wood’s surface. <br>
                     </p>
                 </div>
             </div>
@@ -170,14 +206,11 @@
             </div>
             <div class="text_column">
                 <div class="text_wrapper">
-                    <h2>nomadic platform</h2> <br>
+                    <h2>NOMADIC PLATFORM // BEACH CHAIR BONANZA</h2> <br>
                     <p>
-                        transitioning through states - liquid to solid - plaster takes on and preserves the form of its surroundings
-                        <br><br> with this self developed technique, i explored plaster’s transient qualities; creating objects by casting in sewn canvas moulds; freely arranging whilst still wet by making use of the liquid state of the plaster and the
-                        flexibility of the textile
-                        <br><br> hanging,
-                        <br> slumping,<br> placing-over,<br> propping-up, <br>leaning against <br> like flaccid bodies in space <br> once hardened, the plaster is stripped from its canvas sleeve to expose the soft texture and position it has permanently
-                        taken on
+                        Reacting to the privatisation of public space, I built a bike trailer that could fold out into a platform. This platform can be cycled to any public area, fold out, and act as a tool for claiming the surrounding space. <br> A platform
+                        for creativity: a stage, a table, a workbench. <br><br> Inspired by the 90s party-protests of Reclaim the Streets. Claiming space by being and doing. <br><br> The first event was Beach Chair Bonanza - a beach chair building workshop.
+                        Making chairs in public space with people. Together constructing these symbols of comfort a relaxation, then setting them out. Sitting together. Using that which belongs to the people of the city. <br>
                     </p>
                 </div>
             </div>

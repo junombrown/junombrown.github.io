@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: helvetica;
+    font-family: Helvetica, sans-serif;
     color: black;
     line-height: 1.1;
     font-size: 10pt;
@@ -64,6 +64,9 @@ p {
     transform: scale(90%);
 }
 
+
+/* here you can change the color of the nav icons */
+
 #juno {
     width: 20%;
     color: #02539d;
@@ -93,9 +96,10 @@ p {
 
 main {
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
     position: fixed;
     margin: 0%;
+    padding-bottom: 10%;
 }
 
 .page {
@@ -130,6 +134,9 @@ h1 {
     font-weight: normal;
     margin: 0%;
 }
+
+
+/*  background of the aquarium */
 
 #aquarium {
     background-image: url(assets/backgroundbig.jpg);
@@ -186,6 +193,9 @@ h1 {
     background-color: #3374ae;
 }
 
+
+/* size of the contact links */
+
 .bio_links {
     hyphens: auto;
     font-size: 15pt;
@@ -202,6 +212,19 @@ h1 {
     margin-bottom: 30px;
     padding: 10vh 3vw 10vh 3vw;
     line-height: 1.6;
+}
+
+.column span {
+    font-style: italic;
+    font-size: 9pt;
+}
+
+.column.big {
+    width: 60vw;
+}
+
+#portrait {
+    width: 100%;
 }
 
 
@@ -223,6 +246,24 @@ h1 {
 }
 
 
+/* settings for the icon project title  */
+
+.icon_title {
+    opacity: 0;
+    background-color: #02539d;
+    color: #ee770c;
+    font-size: 16pt;
+    display: flex;
+    width: 70%;
+    transform: translate(20%, -300%);
+}
+
+.icon img:hover+.icon_title {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
 /* PROJECT PAGE MASTER ELEMENTS */
 
 .page_project {
@@ -232,14 +273,12 @@ h1 {
 
 .pic_column {
     height: 70%;
-    margin: 50px 0% 0% 2%;
+    margin: 5vw 0% 0% 2%;
     width: 70%;
     overflow-x: hidden;
     overflow-y: scroll;
     float: left;
     padding-bottom: 50px;
-    position: sticky;
-    top: 0;
 }
 
 .pic_projects img {
@@ -255,13 +294,10 @@ h1 {
 
 .text_column {
     height: 80%;
-    margin: 70px 2% 0% 0%;
+    margin: 5vw 2% 70% 0%;
     width: 26%;
     overflow-x: hidden;
     overflow-y: scroll;
-    position: sticky;
-    padding-bottom: 50px;
-    top: 0;
 }
 
 .text_column::-webkit-scrollbar,
@@ -282,7 +318,7 @@ h1 {
 
 .text_wrapper {
     width: 80%;
-    padding: 10% 10%;
+    padding: 0% 10%;
 }
 
 h2 {
@@ -311,10 +347,8 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-        height: 95vh;
-    }
     /* PHONE NAVIGATION */
+    /* what you change make sure to adapt for the phone when needed */
     #navwrapper {
         width: 100vw;
         padding-top: 0px;
@@ -386,7 +420,8 @@ h2 {
         float: right;
     }
     /* PHONE INFO PAGE ELEMENTS  */
-    .column {
+    .column,
+    .column.big {
         width: 90vw;
         padding: 3vh 5vw 3vh 5vw;
     }
@@ -401,8 +436,6 @@ h2 {
         float: none;
         overflow-y: auto;
         height: auto;
-        position: relative;
-        top: auto;
     }
     .pic_projects {
         margin: 10px 0;
