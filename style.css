@@ -25,9 +25,9 @@ p {
 
 #navwrapper {
     width: 100vw;
-    padding-top: 10px;
+
     background-color: white;
-    height: 54px;
+    height: 70px;
 }
 
 #nav {
@@ -39,7 +39,7 @@ p {
 
 .nav_box {
     font-size: 16pt;
-    padding: 2px 0 2px 0;
+    padding: 1px 0 1px 0;
     margin: 0%;
     position: initial;
     display: block;
@@ -119,6 +119,7 @@ main {
 /* FISH PAGE ELEMENTS  */
 
 #fish_page {
+    overflow: hidden;
     height: 100%;
 }
 
@@ -139,8 +140,9 @@ h1 {
 /*  background of the aquarium */
 
 #aquarium {
+    height: 100%;
     background-image: url(assets/backgroundbig.jpg);
-    background-position: center;
+   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -153,7 +155,7 @@ h1 {
 #info_fish {
     position: relative;
     float: right;
-    padding: 5vh 2.5vw 0 0;
+    padding: 2vh 2.5vw 0 0;
     width: 60vw;
 }
 
@@ -306,7 +308,8 @@ h1 {
 }
 
 .text_column::-webkit-scrollbar,
-.pic_column::-webkit-scrollbar {
+.pic_column::-webkit-scrollbar,
+.page::-webkit-scrollbar {
     display: none;
 }
 
@@ -314,7 +317,8 @@ h1 {
 /* Hide scrollbar for IE, Edge and Firefox */
 
 .text_column,
-.pic_column {
+.pic_column
+ {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -352,7 +356,8 @@ h2 {
 }
 
 #tl_1,
-#tl_4 {
+#tl_4
+{
     width: 50%;
 }
 
@@ -362,15 +367,18 @@ h2 {
     padding-top: 300px;
     float: left;
 }
-#tl_3 {
+#tl_3,
+#tl_6 {
     width: 80%;
     float: right;
     padding-right: 60px;
 }
 
-#tl_6 {
-    width: 90%;
+#tl_7 {
+    width: 50%;
+    padding-top: 60px;
 }
+
 
 @media only screen and (max-width: 600px) {
     /* PHONE NAVIGATION */
