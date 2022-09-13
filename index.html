@@ -10,9 +10,9 @@
     <meta name="description" content="This is an example of a meta description. 
 This will often show up in search results.">
     <!-- Tab text (description) -->
-    <title>Juno Brown's website / home</title>
+    <title>JUNO BROWN</title>
     <!-- link of icon -->
-    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon fish.png" type="image/x-icon" />
     <!-- link to Css file (style, layout of page), JQuery javascript library and JS file (Jquery must be before Js bc it's called in the main.js)-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,7 +48,9 @@ This will often show up in search results.">
             <div id=pick>
                 <h1>PICK OF THE FISH</h1>
                 <!-- HERE change the text for the PICK OF THE FISH description (<br> is a breakline) -->
-                <p>This is my fish. <br> In October my fish considered how its aquarium looked a little like a window display, and thought it conceptually interesting to make use of this idea. So, now and then my fish and I (democratically) pick something we both like
+                <p>This is my fish. <br> In October my fish considered how its aquarium looked a little like a window display, 
+                    and thought it conceptually interesting to make use of this idea. 
+                    So, now and then my fish and I (democratically) pick something (made by someone else) which we both like
                     and display it in the aquarium.</p>
             </div>
 
@@ -72,27 +74,39 @@ This will often show up in search results.">
 
             <!--Change the order of these block to change the order of the icons on the page -->
 
-            <a class="icon" id="icon_1" href="#tl">
+          
+             <!--ICON 1 -->
+               <a class="icon" id="icon_1" href="#tl">
                 <img src="assets/TL-icon.png" alt="project icon">
                 <span class="icon_title">tube lights</span>
             </a>
-             <!--ICON 1 -->
-            <a class="icon" id="icon_1" href="#plaster">
-                <img src="assets/plaster-icon.png" alt="project icon">
-                <span class="icon_title">soft castings</span>
-            </a>
-            <!--end ICON 1 -->
+             <!--end ICON 1 -->
 
-            <a class="icon" id="icon_2" href="#metal"><img src="assets/metalpng.png" alt="project icon">
-                <span class="icon_title">metal legs</span>
-            </a>
-
-            <a class="icon" id="icon_3" href="#shadow"><img src="assets/cyanopng.png" alt="project icon">
+            <a class="icon" id="icon_2" href="#shadow">
+                <img src="assets/cyanopng.png" alt="project icon">
                 <span class="icon_title">shadow benches</span>
             </a>
 
-            <a class="icon" id="icon_4" href="#nomadic"><img src="assets/nomadic-icon.png" alt="project icon">
-                <span class="icon_title">nomadic platform //beach chair bonanza</span>
+
+            <a class="icon" id="icon_3" href="#plaster">
+                <img src="assets/plaster-icon.png" alt="project icon">
+                <span class="icon_title">soft castings</span>
+            </a>
+           
+
+            <a class="icon" id="icon_4" href="#metal">
+                <img src="assets/metalpng.png" alt="project icon">
+                <span class="icon_title">metal legs</span>
+            </a>
+
+            <a class="icon" id="icon_5" href="#factory">
+                <img src="assets/factory_icon.png" alt="project icon">
+                <span class="icon_title">factory of inefficiency</span>
+            </a>
+
+            <a class="icon" id="icon_6" href="#nomadic">
+                <img src="assets/nomadic-icon.png" alt="project icon">
+                <span class="icon_title">nomadic platform // beach chair bonanza</span>
             </a>
 
             <!-- add here new project entry  -->
@@ -151,6 +165,28 @@ This will often show up in search results.">
             </div>
         </div>
 
+        
+        <!-- SHADOW PROJECT -->
+        <div class="page page_project" id=shadow>
+            <div class="pic_column">
+                <div class="pic_projects" id=plaster_1><img src="assets/projects/cyano1.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_2><img src="assets/projects/cyano2.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_3><img src="assets/projects/cyano3.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano4.jpg" alt="Project Picture"></div>
+                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano5.jpg" alt="Project Picture"></div>
+            </div>
+            <div class="text_column">
+                <div class="text_wrapper">
+                    <h2>SHADOW FURNITURE</h2> <br>
+                    <p>
+                        2021 <br> <br> A series of benches. <br> Non-physical environmental elements as a design tool. <br><br> Mutliplex panels were treated with cyanotype chemicals that made the surfaces photosensitive. <br><br> With these treated panels I went out on
+                        a sunny day to catch architectural shadows. <br><br> Accidental compositions of light and dark. Sharp edges, unexpected angles, dancing leaves. <br><br> Exposing the panels for a few minutes, they captured these compositions.
+                        <br><br> Once rinsed with water, the panels loose their photosensitive property and the shadows become fixed.<br><br> Ephemeral details captured and frozen in the wood’s surface. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <!-- PLASTER PROJECT -->
         <!-- in id="plaster" make sure the the # is the same as the icon in the project list -->
         <div class="page page_project" id=plaster>
@@ -167,8 +203,8 @@ This will often show up in search results.">
                     <h2>SOFT CASTINGS</h2> <br>
                     <p>
                         <!-- text here -->
-                        2019 <br> <br> Material / process experimentation. <br> <br> Plaster is cast in sewn canvas sacks. <br> While the plaster is liquid, the sacks can be placed, <br> slumped, hung, propped up. <br> Creating creases, dimples, folds. <br> <br> Once
-                        set, this soft form becomes rigid.<br><br> The textile is removed, revealing the almost identical <br> surface of plaster, which has taken on the canvas texture. <br> <br> Hard objects with soft character. <br>
+                        2019 <br> <br> Material / process experimentation. <br> <br> Plaster is cast in sewn canvas sacks. <br> While the plaster is liquid, the sacks can be placed, slumped, hung, propped up. <br> Creating creases, dimples, folds. <br> <br> Once
+                        set, this soft form becomes rigid.<br><br> The textile is removed, revealing the almost identical surface of plaster, which has taken on the canvas texture. <br> <br> Hard objects with soft character. <br>
                     </p>
                 </div>
             </div>
@@ -198,22 +234,18 @@ This will often show up in search results.">
             </div>
         </div>
 
-        <!-- SHADOW PROJECT -->
-        <div class="page page_project" id=shadow>
+        <!-- FACTORY PROJECT -->
+        <div class="page page_project" id=factory>
             <div class="pic_column">
-                <div class="pic_projects" id=plaster_1><img src="assets/projects/cyano1.jpg" alt="Project Picture"></div>
-                <div class="pic_projects" id=plaster_2><img src="assets/projects/cyano2.jpg" alt="Project Picture"></div>
-                <div class="pic_projects" id=plaster_3><img src="assets/projects/cyano3.jpg" alt="Project Picture"></div>
-                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano4.jpg" alt="Project Picture"></div>
-                <div class="pic_projects" id=plaster_4><img src="assets/projects/cyano5.jpg" alt="Project Picture"></div>
+                <div style="padding:60% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/749117564?h=03b8645d86&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen style="position:absolute;top:0;left:0;width:80%;height:80%;" title="FACTORY OF INEFFICIENCY"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
+                
             </div>
             <div class="text_column">
                 <div class="text_wrapper">
-                    <h2>SHADOW FURNITURE</h2> <br>
+                    <h2>FACTORY OF INEFFICIENCY</h2> <br>
                     <p>
-                        2021 <br> <br> A series of benches. <br> Non-physical environmental elements as a design tool. <br><br> Mutliplex panels were treated with cyanotype chemicals that made the surfaces photosensitive. <br><br> With these treated panels I went out on
-                        a sunny day to catch architectural shadows. <br><br> Accidental compositions of light and dark. Sharp edges, unexpected angles, dancing leaves. <br><br> Exposing the panels for a few minutes, they captured these compositions.
-                        <br><br> Once rinsed with water, the panels loose their photosensitive property and the shadows become fixed.<br><br> Ephemeral details captured and frozen in the wood’s surface. <br>
+                        2021 <br> <br> This text is currently being updated. Take a look at the images and come back some other time in the future for the words <br>
                     </p>
                 </div>
             </div>
