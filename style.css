@@ -156,7 +156,9 @@ h1 {
     position: relative;
     float: right;
     padding: 2vh 2.5vw 0 0;
-    width: 60vw;
+    width: 50vw;
+    display: inline-table ;
+       /* overflow-y: scroll;*/
 }
 
 
