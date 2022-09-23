@@ -412,6 +412,9 @@ h2 {
     #info {
         width: 50%;
     }
+
+    #fish_page {overflow-y: scroll;}
+    
     /* PHONE FISH PAGE ELEMENTS  */
     #pick {
         position: relative;
