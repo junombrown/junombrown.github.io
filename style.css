@@ -414,7 +414,7 @@ h2 {
     }
 
     #fish_page {overflow-y: scroll;}
-    
+
     /* PHONE FISH PAGE ELEMENTS  */
     #pick {
         position: relative;
@@ -466,6 +466,7 @@ h2 {
         padding: 3vh 5vw 3vh 5vw;
     }
     /* PHONE PROJECT PAGE MASTER ELEMENTS */
+ 
     .page_project {
         overflow-y: scroll;
     }
