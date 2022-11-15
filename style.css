@@ -340,7 +340,7 @@ h2 {
 }
 
 
-/* PROJECT PAGE PLASTER */
+/* PROJECT PAGES */
 
 #plaster_1,
 #plaster_4 {
@@ -382,6 +382,25 @@ h2 {
     padding-top: 60px;
 }
 
+#factory_1 {
+    width: 70%;
+}
+
+#factory_2 {
+    width: 35%;
+}
+
+#factory_3 {
+    width: 34%;
+    padding-top:50px;
+    padding-left: 60px;
+}
+
+#factory_4 {
+    width: 35%;
+    padding-top:35px;
+
+}
 
 @media only screen and (max-width: 600px) {
     /* PHONE NAVIGATION */
