@@ -518,4 +518,8 @@ h2 {
         width: 55%;
         float: left;
     }
+    #factory_2,
+    #factory_4 {
+        padding: 5%;
+    }
 }
