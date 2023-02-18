@@ -25,7 +25,6 @@ p {
 
 #navwrapper {
     width: 100vw;
-
     background-color: white;
     height: 50px;
 }
@@ -96,7 +95,7 @@ p {
 
 main {
     width: 100vw;
-    height: 85vh;
+    height: calc(100vh - 50px);
     position: fixed;
     margin: 0%;
     padding-bottom: 10%;
@@ -142,14 +141,13 @@ h1 {
 #aquarium {
     height: 100%;
     background-image: url(assets/backgroundbig.jpg);
-   background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 60vh;
-    position: initial;
+    position: fixed;
     bottom: 0%;
-    display: inline-table;
 }
 
 #info_fish {
@@ -157,10 +155,9 @@ h1 {
     float: right;
     padding: 2vh 2.5vw 0 0;
     width: 50vw;
-    display: inline-table ;
-       /* overflow-y: scroll;*/
+    display: inline-table;
+    /* overflow-y: scroll;*/
 }
-
 
 #text_fish {
     float: right;
@@ -211,7 +208,6 @@ h1 {
     font-size: 15pt;
 }
 
-
 .bio_links:hover {
     font-style: italic;
 }
@@ -224,7 +220,6 @@ h1 {
     padding: 10vh 3vw 10vh 3vw;
     line-height: 1.6;
 }
-
 
 .column span {
     font-style: italic;
@@ -239,6 +234,7 @@ h1 {
 #portrait {
     width: 100%;
 }
+
 
 /* PROJECTS PAGE ELEMENTS */
 
@@ -304,6 +300,7 @@ h1 {
     float: left;
 }
 
+
 /*.photo_description_column {
     font-size: 8pt;
     float: left;
@@ -311,7 +308,6 @@ h1 {
     padding: 0vh 0vw 0vh 0vw;
     line-height: 1.6;
 }*/
-
 
 .text_column {
     height: 70%;
@@ -331,8 +327,7 @@ h1 {
 /* Hide scrollbar for IE, Edge and Firefox */
 
 .text_column,
-.pic_column
- {
+.pic_column {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -369,12 +364,9 @@ h2 {
     float: right;
 }
 
-
 #tl_1,
-#tl_4
-{
+#tl_4 {
     width: 60%;
-    
 }
 
 #tl_2,
@@ -383,6 +375,7 @@ h2 {
     padding-top: 300px;
     float: left;
 }
+
 #tl_3,
 #tl_6 {
     width: 80%;
@@ -405,14 +398,13 @@ h2 {
 
 #factory_3 {
     width: 34%;
-    padding-top:50px;
+    padding-top: 50px;
     padding-left: 60px;
 }
 
 #factory_4 {
     width: 35%;
-    padding-top:35px;
-
+    padding-top: 35px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -422,7 +414,6 @@ h2 {
         width: 100vw;
         padding-top: 0px;
         background-color: white;
-        height: 54px;
     }
     #nav {
         width: 100vw;
@@ -444,9 +435,9 @@ h2 {
     #info {
         width: 50%;
     }
-
-    #fish_page {overflow-y: scroll;}
-
+    #fish_page {
+        overflow-y: scroll;
+    }
     /* PHONE FISH PAGE ELEMENTS  */
     #pick {
         position: relative;
@@ -498,7 +489,6 @@ h2 {
         padding: 3vh 5vw 3vh 5vw;
     }
     /* PHONE PROJECT PAGE MASTER ELEMENTS */
- 
     .page_project {
         overflow-y: scroll;
     }
