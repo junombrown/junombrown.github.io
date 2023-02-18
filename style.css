@@ -139,15 +139,15 @@ h1 {
 /*  background of the aquarium */
 
 #aquarium {
-    height: 100%;
     background-image: url(assets/backgroundbig.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 60vh;
-    position: fixed;
+    position: initial;
     bottom: 0%;
+    display: inline-table;
 }
 
 #info_fish {
@@ -405,6 +405,12 @@ h2 {
 #factory_4 {
     width: 35%;
     padding-top: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+    #pick {
+        width: 45vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
