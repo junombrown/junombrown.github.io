@@ -305,13 +305,6 @@ h1 {
 }
 
 
-/*.photo_description_column {
-    font-size: 8pt;
-    float: left;
-    display: block;
-    padding: 0vh 0vw 0vh 0vw;
-    line-height: 1.6;
-}*/
 
 .text_column {
     height: 70%;
@@ -388,8 +381,8 @@ h2 {
 }
 
 #tl_7 {
-    width: 50%;
-    padding-top: 60px;
+    width: 40%;
+   
 }
 
 #factory_1 {
