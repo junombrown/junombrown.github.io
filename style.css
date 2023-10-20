@@ -24,6 +24,14 @@ p {
     line-height: 1.6;
 }
 
+.text_links {
+    hyphens: auto;
+    
+}
+
+.text_links:hover {
+    font-style: italic;
+}
 
 /* NAVIGATION */
 
